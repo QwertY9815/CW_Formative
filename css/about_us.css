@@ -1,0 +1,15 @@
+/* About Us Page Specific Styles */
+.about-us {
+    padding: 20px;
+}
+
+.about-us h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+}

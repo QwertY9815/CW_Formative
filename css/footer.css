@@ -1,0 +1,24 @@
+/* Footer Styles */
+footer {
+    background-color: #353941;
+    color: #90B8F8;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Sora', sans-serif; /* Use Sora font for the footer */
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #90B8F8;
+    transition: color 0.3s ease;
+    font-family: 'Sora', sans-serif; /* Use Sora font for footer links */
+    font-weight: 700; /* Bold font for emphasis */
+}
+
+.footer-content a:hover {
+    color: #fff;
+}
+

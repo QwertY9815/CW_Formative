@@ -1,0 +1,46 @@
+/* Contact Us Page Specific Styles */
+.contact-us {
+    padding: 20px;
+}
+
+.contact-us h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-us label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.contact-us input, .contact-us textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contact-us textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-us .btn {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+}
+
+.contact-us .btn:hover {
+    background-color: #003399;
+}

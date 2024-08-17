@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: #26282B;
+}
+ h1{
+    font-size: 2rem;
+    font-family: "Sora", sans-serif;
+
+ }
+ h2{
+    font-size: 1.5rem;
+    font-family: "Sora", sans-serif;
+    color: #5F85DB ;
+ }
+.nav-image{
+    margin-left: 30px;
+}
+.search-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+.searchbar{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #26282B;
+    width: fit-content;
+    padding: 10px ;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.searchbar input{
+    border: none;
+    width: 80%;
+}
+.searchbar input:focus{
+    outline: none;
+}
+
+.discussions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.question{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #5F85DB ;
+    border-radius: 4px;
+    margin: 5px;
+    padding: 20px;
+    height: 200px;
+}
+.question:hover{
+    cursor: pointer;
+    border-color: #353941;
+    transition: .3s;
+}
+.bi-chat-left{
+    font-size: 40px;
+}
+
+.bi-chat-left-text{
+    font-size: 20px;
+}
+

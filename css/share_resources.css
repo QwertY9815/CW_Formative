@@ -1,0 +1,40 @@
+/* Share Resources Page Specific Styles */
+.resources {
+    padding: 20px;
+    text-align: center;
+}
+
+.resources h1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.resources form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resources label {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.resources input[type="file"] {
+    margin-bottom: 20px;
+}
+
+.resources .btn {
+    background-color: #0044cc;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+}
+
+.resources .btn:hover {
+    background-color: #003399;
+}

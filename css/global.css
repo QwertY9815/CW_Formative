@@ -1,0 +1,50 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport */
+}
+
+main {
+    flex: 1; /* Allow the main content to grow and fill available space */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif; /* Headings and titles font */
+    font-weight: 700; /* Use bold weight for headings */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0044cc;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Sora', sans-serif; /* Button text font */
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #003399;
+}
