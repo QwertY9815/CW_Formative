@@ -45,3 +45,54 @@ nav {
     background-color: #26282B;
     border-radius: 5px;
 }
+
+span{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .hide{
+        display: none;
+        transform: 10s;
+    }
+    span{
+        display: block;
+        color: white;
+    }
+    span:hover{
+        cursor: pointer;
+    }
+    nav{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #353941;
+        padding: 20px;
+        border-radius: 10px;
+        animation: example 0.5s;
+    }
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+    }
+    #close-nav{
+        color: white;
+        text-align: right;
+        width: 100%;
+        line-height: 0px;
+    }
+    #close-nav:hover{
+        cursor: pointer;
+    }
+    .bi-box-arrow-right{
+        font-size: 20px;
+    }
+    .bi-list{
+        font-size: 32px;
+    }
+    @keyframes example {
+        0% {opacity: 0;}
+        100% {opacity: 100;}
+      }
+  }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/header.css"> <!-- Header styles -->
     <link rel="stylesheet" href="css/footer.css"> <!-- Footer styles -->
     <link rel="stylesheet" href="css/home.css">   <!-- Home page specific styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">   
 </head>
 
 <body>
@@ -21,8 +22,10 @@
         <div class="logo">
             <a href="./index.html"><img src="assets/images/logo_white.png" alt="CTU-Buddy Logo"></a>
         </div>
-        <nav>
+        <span id="open-nav"><i class="bi bi-list"></i></span>
+        <nav id="nav" class="hide" >
             <ul class="nav-links">
+                <span id="close-nav"><i class="bi bi-box-arrow-right"></i></span>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./pages/timetable.html">Timetable</a></li>
                 <li><a href="./pages/discussion.html">Discussion</a></li>
@@ -49,6 +52,7 @@
             <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
         </div>
     </footer>
+<script src="js/header.js"></script>
 </body>
 
 </html>
