@@ -9,7 +9,7 @@ body {
     background: #26282B;
     color: rgb(255, 255, 255);
     font-size: 30px;
-    margin: 0px 40px 0px 40px;
+    margin: 10px 40px 0px 40px;
     font-family: 'Sora', sans-serif;
     border-radius: 8px;
     /* background: linear-gradient(135deg, #353941, #565f75); */
@@ -89,7 +89,7 @@ body {
     flex: 1;
     padding: 20px;
     background-color: #353941;
-    margin: 40px 40px 0px 40px;
+    margin: 40px 40px 10px 40px;
     border: #26282B solid 1px;
     border-radius: 8px;
 }
