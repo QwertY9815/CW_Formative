@@ -181,6 +181,11 @@ p {
     .mission p, .vision p, .purpose p {
         text-align: left;
     }
+
+    .member:hover {
+        transform: none;
+        transition: transform 0.3s;
+    }
 }
 
 
