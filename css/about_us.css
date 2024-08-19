@@ -160,6 +160,27 @@ p {
     margin: 10px;
 }
 
+@media screen and (max-width: 992px) {
+    .mission {
+        margin: 10px 5px;
+    }
+
+    .vision {
+        margin: 10px 5px;
+    }
+
+    .purpose {
+        margin: 10px 5px;
+    }
+
+    .header {
+        margin-top: 10px;
+    }
+}
+
+
+
+
 /* #353941
 #26282B
 #5F85DB
