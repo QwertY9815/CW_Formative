@@ -19,6 +19,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   background-color: #fff;
+  z-index: -1;
 }
 
 a {
@@ -32,57 +33,6 @@ ul {
 
 img {
   max-width: 100%;
-}
-
-/* Navbar */
-.navbar {
-  background-color: #fff;
-  padding: 5px;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar .main-menu ul {
-  display: flex;
-}
-
-.navbar ul li a {
-  padding: 10px 20px;
-  display: block;
-  font-weight: 600;
-  transition: 0.4s;
-}
-
-.navbar ul li a:hover {
-  color: var(--dark-blue);
-}
-
-.navbar ul li a li {
-  margin-right: 10px;
-}
-
-.navbar ul li:last-child a {
-  margin-left: 10px;
-}
-
-/* Utility Classes */
-
-/* Wide Containers */
-.container {
-  max-width: auto; /* 1200px */
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Less Wide Containers */
-.container-sm {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* Buttons */
@@ -151,24 +101,15 @@ img {
 .video-container {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 80%;
   overflow: hidden;
+  margin-bottom: 0px;
 }
 
 .video-container video {
   width: 100%;
-  height: auto;
-}
-
-.video-container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 1;
+  object-fit: cover;
 }
 
 .overlay-text {
@@ -196,7 +137,7 @@ img {
 .announcement-section {
   margin: 40px 0;
   padding: 20px;
-  background-color: var(--off-white);
+  background-color: #fff;
   border-radius: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -268,19 +209,6 @@ img {
   color: #333;
 }
 
-/* Timetable Section */
-.timetable-section {
-  margin-top: 40px;
-  padding: 20px 0;
-}
-
-.timetable-iframe {
-  width: 100%;
-  height: 600px;
-  border: 2px solid var(--light-grey);
-  border-radius: 10px;
-}
-
 /* Student Life Section */
 .student-life-section {
   margin-top: 40px;
@@ -331,103 +259,15 @@ img {
   background-color: var(--light-grey);
 }
 
-/* Footer Section */
-.footer {
-  background-color: var(--dark-grey);
-  padding: 40px 0;
-  color: white;
-}
-
-.footer-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.footer-logo {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.footer-logo img {
-  max-width: 400px;
-}
-
-.footer-columns {
-  flex: 2;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.footer-column {
-  flex: 1;
-}
-
-.footer-column h3 {
-  margin-bottom: 15px;
-  font-size: 1.2em;
-  font-weight: bold;
-  font-family: "Sora", sans-serif;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 10px;
-}
-
-.footer-column ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.footer-column ul li a:hover {
-  color: var(--light-blue);
-}
-
-.footer-info {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer-info p {
-  margin: 0;
-}
-
 /* Mobile Styles */
 @media (max-width: 768px) {
-  /* Navbar */
-  .navbar .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .navbar ul li {
-    width: 100%;
-  }
-
-  .navbar ul li a {
-    padding: 10px;
-    width: 100%;
-    text-align: left;
-  }
-
   /* Video Section */
   .overlay-text h1 {
     font-size: 2em;
   }
-
+  .video-container {
+    height: 400px;
+  }
   .overlay-text p {
     font-size: 1em;
   }
@@ -435,6 +275,8 @@ img {
   .button-container {
     flex-direction: column;
     gap: 10px;
+    font-size: 10px;
+    z-index: 1;
   }
 
   /* Announcement Section */
@@ -458,15 +300,11 @@ img {
   .button-bar .container {
     flex-direction: column;
     gap: 10px;
+    margin: 0 10px;
   }
 
   .button-bar .btn {
     width: 100%;
-  }
-
-  /* Timetable Section */
-  .timetable-iframe {
-    height: 400px;
   }
 
   /* Student Life Section */
@@ -482,6 +320,11 @@ img {
   .slideshow-image {
     width: 100%;
     height: auto;
+  }
+
+  .slideshow-image:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
 
   /* Footer Section */

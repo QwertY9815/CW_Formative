@@ -1,24 +1,90 @@
 /* Footer Styles */
 footer {
-    background-color: #353941;
-    color: #90B8F8;
-    text-align: center;
-    padding: 20px;
-    font-family: 'Sora', sans-serif; /* Use Sora font for the footer */
+  background-color: #353941;
+  color: #90b8f8;
+  text-align: center;
+  padding: 20px;
+  font-family: "Sora", sans-serif; /* Use Sora font for the footer */
 }
 
 .footer-content p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 .footer-content a {
-    color: #90B8F8;
-    transition: color 0.3s ease;
-    font-family: 'Sora', sans-serif; /* Use Sora font for footer links */
-    font-weight: 700; /* Bold font for emphasis */
+  color: #90b8f8;
+  transition: color 0.3s ease;
+  font-family: "Sora", sans-serif; /* Use Sora font for footer links */
 }
 
 .footer-content a:hover {
-    color: #fff;
+  color: #fff;
 }
 
+.footer {
+  background-color: var(--dark-grey);
+  padding: 40px 0;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 400px;
+}
+
+.footer-columns {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Sora", sans-serif;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: var(--light-blue);
+}
+
+.footer-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-info p {
+  margin: 0;
+}
