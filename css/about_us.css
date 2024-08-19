@@ -2,37 +2,6 @@ body {
     background-color: #ffffff;
 }
 
-nav {
-    background-color: #26282B;
-    padding: 15px 0;
-    margin: 0px 40px 10px 40px;
-    font-family: 'Sora', sans-serif;
-    border-radius: 8px;
-}
-
-.navbar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; 
-}
-
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.navbar li a:hover {
-    background-color: #5F85DB;
-    border-radius: 5px; 
-}
 
 .header {
     padding: 10px;

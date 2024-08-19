@@ -3,23 +3,36 @@
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="AboutUsCSS.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">    
+    <link rel="stylesheet" href="../css/discussion.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/about_us.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
     <title>CTU-Buddy</title>
 
 </head>
 
 <body>
-    <nav>
-        <ul class="navbar">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#timetable">Timetable</a></li>
-            <li><a href="#discussion">Discussion</a></li>
-            <li><a href="#share_resources">Share Resources</a></li>
-            <li><a href="#about_us">About Us</a></li>
-            <li><a href="#contact_us">Contact Us</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/images/logo_white.png" alt="CTU-Buddy Logo"></a>
+        </div>
+        <span id="open-nav"><i class="bi bi-list"></i></span>
+        <nav id="nav" class="hide" >
+            <ul class="nav-links">
+                <span id="close-nav"><i class="bi bi-box-arrow-right"></i></span>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="discussion.html">Discussion</a></li>
+                <li><a href="share_resources.html">Share Resources</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="header">
         <h1>About Us</h1>
@@ -28,7 +41,7 @@
     <h2 class="team_heading">The Team</h2>
     <div class="team">
         <div class="member">
-            <img src="Images/Anray.jpeg" alt="Member 1">
+            <img src="../assets/images/" alt="Member 1">
             <h3>Anray Hayden</h3>
             <p>Collaborating to build a better learning experience at CTU.</p>
         </div>
@@ -38,12 +51,12 @@
             <p>Bringing ideas to life with creativity and code.</p>
         </div>
         <div class="member">
-            <img src="Images/Arie.jpeg" alt="Member 3">
+            <img src="../assets/images/" alt="Member 3">
             <h3>Arie Verster</h3>
             <p>Contributing to the shared vision of an intuitive educational platform.</p>
         </div>
         <div class="member">
-            <img src="Images/EG.jpeg" alt="Member 4">
+            <img src="../assets/images/" alt="Member 4">
             <h3>EG Booyse</h3>
             <p>Helping shape a seamless and engaging user experience.</p>
         </div>
@@ -68,8 +81,12 @@
             <br>
             Beyond just a tool for individual success, CTU-Buddy aims to cultivate a sense of community and belonging within CTU. By facilitating easy communication and resource-sharing, we hope to bridge the gap between students, faculty, and staff, promoting collaboration, mentorship, and a stronger academic network. With security, accessibility, and ease-of-use as core pillars, CTU-Buddy strives to be a trusted companion that enhances both the academic and social aspects of university life, contributing to a more holistic educational experience for all students.</p>
     </div>
-    <footer class="footer">
-        footer
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 CTU-Buddy. All rights reserved.</p>
+            <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
+        </div>
     </footer>
+    <script src="../js/header.js"></script>
 </body>
 </html>
