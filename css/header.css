@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 100px;
 }
 
 nav {
@@ -57,7 +57,7 @@ span {
   }
   span {
     display: block;
-    color: white;
+    color: #333;
   }
   span:hover {
     cursor: pointer;

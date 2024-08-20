@@ -1,4 +1,3 @@
-
 :root {
   --dark-blue: #5f85db;
   --light-blue: #90b8f8;
@@ -80,6 +79,7 @@ footer {
 
 .footer-column ul li a {
   color: #fff;
+  font-weight: unset;
   text-decoration: none;
   transition: color 0.3s;
 }

@@ -267,7 +267,7 @@ img {
     line-height: 45px;
   }
   .video-container {
-    height: 400px;
+    height: 80vh;
   }
   .overlay-text p {
     font-size: 0.9em;
@@ -350,5 +350,26 @@ img {
   .footer-columns {
     flex-direction: column;
     gap: 20px;
+  }
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+}
+
+.nav-links a {
+  color: #333;
+}
+
+.nav-links a:hover {
+  background-color: #fff;
+  color: var(--dark-blue);
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-links a {
+    color: #fff;
   }
 }
