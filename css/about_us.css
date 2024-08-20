@@ -2,6 +2,22 @@ body {
     background-color: #ffffff;
 }
 
+h2 {
+    color: #26282B;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px;
+}
 
 .header {
     padding: 10px;
@@ -114,26 +130,8 @@ body {
     line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-    .mission-vision {
-        display: block;
-    }
 
-    .mission, .vision {
-        margin-bottom: 20px;
-    }
-}
 
-.footer {
-    padding: 10px;
-    margin: 25px 40px 0px 40px;
-    text-align: center;
-    background: #26282B;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-family: 'Sora', sans-serif;
-    border-radius: 8px;
-}
 
 /* @keyframes fadeIn {   //Animation vir load van page
     from { opacity: 0; }
@@ -144,22 +142,6 @@ body {
     animation: fadeIn 1.5s ease-in-out;
 } */
 
-h2 {
-    color: #26282B;
-    font-size: 35px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-p {
-    font-size: 18px;
-    margin: 10px;
-}
 
 @media screen and (max-width: 992px) {
     .mission {
@@ -188,6 +170,15 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+    .mission-vision {
+        display: block;
+    }
+
+    .mission, .vision {
+        margin-bottom: 20px;
+    }
+}
 
 
 

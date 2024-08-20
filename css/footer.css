@@ -1,3 +1,11 @@
+
+:root {
+  --dark-blue: #5f85db;
+  --light-blue: #90b8f8;
+  --dark-grey: #353941;
+  --light-grey: #26282b;
+  --off-white: #f9f8f4;
+}
 /* Footer Styles */
 footer {
   background-color: #353941;
