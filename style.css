@@ -361,6 +361,9 @@ header {
 .nav-links a {
   color: #333;
 }
+span{
+  color: #333;
+}
 
 .nav-links a:hover {
   background-color: #fff;
