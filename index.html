@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CTU-Buddy</title>
+    <title>CTU Buddy | Home</title>
 
     <!-- Fonts: Sora, Montserrat -->
-     <!-- Comment -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,161 +21,217 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
 
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
 
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.jpg" type="image/x-icon" />
   </head>
   <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="./assets/images/logo_color.png" alt="CTU-Buddy Logo"
+        /></a>
+      </div>
+      <span id="open-nav"><i class="bi bi-list"></i></span>
+      <nav id="nav" class="hide">
+        <ul class="nav-links">
+          <span id="close-nav"><i class="bi bi-box-arrow-right"></i></span>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./pages/timetable.html">Timetable</a></li>
+          <li><a href="./pages/discussion.html">Discussion</a></li>
+          <li><a href="./pages/share_resources.html">Share Resources</a></li>
+          <li><a href="./pages/about_us.html">About Us</a></li>
+          <li><a href="./pages/contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="navbar">
+    <!-- Video Section -->
+    <div class="video-wrapper">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="images/welcome_video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay-text">
+          <h1>Welcome To CTU Buddy</h1>
+          <p>Your educational companion at City Technical University</p>
+          <div class="button-container">
+            <a href="./pages/timetable.html" class="btn btn"
+              >Explore Timetable</a
+            >
+            <a href="./pages/discussion.html" class="btn btn"
+              >Join Discussion</a
+            >
+            <a href="./pages/share_resources.html" class="btn btn"
+              >Access Resources</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Announcement Section -->
+    <div class="announcement-section container">
+      <h2>Announcements</h2>
+
+      <!-- Announcements -->
+      <div class="announcement">
+        <h3>CTU Tech Fest 2024</h3>
+        <p>
+          Get ready for CTU Tech Fest 2024, the premier event of the year for
+          all tech enthusiasts at City Technical University! Join us in
+          September for an action-packed week of innovation, creativity, and
+          learning. This year's fest features hands-on workshops, insightful
+          talks from industry leaders, and exciting competitions that will
+          challenge your skills and ignite your passion for technology. Whether
+          you're a coding wizard, a design guru, or simply curious about the
+          future of tech, there's something for everyone. Don't miss out on this
+          opportunity to connect, collaborate, and celebrate the best in
+          technology at CTU!
+        </p>
+        <span class="date">Posted on: August 20, 2024</span>
+      </div>
+
+      <div class="announcement">
+        <h3>Welcome to the New Semester!</h3>
+        <p>
+          We are excited to kick off the new semester with new features on
+          CTU-Buddy. Check out the updated timetable and join our community
+          discussions.
+        </p>
+        <span class="date">Posted on: August 18, 2024</span>
+      </div>
+
+      <div class="announcement">
+        <h3>Library Hours Extended</h3>
+        <p>
+          Good news! The CTU Library has extended its hours to better
+          accommodate your study schedule. The new hours are from 8:00 AM to
+          10:00 PM.
+        </p>
+        <span class="date">Posted on: August 15, 2024</span>
+      </div>
+    </div>
+
+    <!-- Buttons Bar Section -->
+    <div class="button-bar">
       <div class="container">
-        <div class="logo" />
-          <a href="home_arie.html" /> <!-- Change page name -->
+        <a href="./pages/timetable.html" class="btn btn">Timetable</a>
+        <a href="./pages/discussion.html" class="btn btn">Discussion</a>
+        <a href="./pages/share_resources.html" class="btn btn">Resources</a>
+      </div>
+    </div>
 
-            <!-- Logo -->
-            <img src="Images/logo_color.png" alt="Logo" /> 
-          </a>
-        </div> 
+    <!-- Student Life Section -->
+    <div class="student-life-section container">
+      <h2>Student Life at CTU</h2>
 
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="home_arie.html">Home</a> <!-- Change page name -->
-            </li>
-            <li>
-              <a href="#">Timetable</a> <!-- Enter page name -->
-            </li>
-            <li>
-              <a href="#">Discussion</a>  <!-- Enter page name -->
-            </li>
-            <li>
-              <a href="#">Share Resources</a> <!-- Enter page name -->
-            </li>
-            <li>
-              <a href="#">About Us</a>  <!-- Enter page name -->
-            </li>
-            <li>
-              <a href="#">Contact Us</a>  <!-- Enter page name -->
-            </li>
-            <li>
-              <a class="btn-login" href="#"> <!-- Login Page -->
-                <i class="fas fa-user"></i>
-              </a>
-            </li>
-          </ul>
+      <div class="slideshow-container">
+        <img
+          src="images/student_life_1.jpg"
+          alt="Student Life 1"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_2.jpg"
+          alt="Student Life 2"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_3.jpg"
+          alt="Student Life 3"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_4.jpg"
+          alt="Student Life 4"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_5.jpg"
+          alt="Student Life 5"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_6.jpg"
+          alt="Student Life 6"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_7.jpg"
+          alt="Student Life 7"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_8.jpg"
+          alt="Student Life 8"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_9.jpg"
+          alt="Student Life 9"
+          class="slideshow-image"
+        />
+        <img
+          src="images/student_life_10.jpg"
+          alt="Student Life 10"
+          class="slideshow-image"
+        />
+      </div>
+    </div>
 
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <img src="images/logo_color.png" alt="CTU-Buddy Logo" />
+        </div>
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="./pages/timetable.html">Timetable</a></li>
+              <li><a href="./pages/discussion.html">Discussion</a></li>
+              <li>
+                <a href="./pages/share_resources.html">Share Resources</a>
+              </li>
+              <li><a href="./pages/about_us.html">About Us</a></li>
+              <li><a href="./pages/contact_us.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+              <li>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </nav>
-
-  <!-- Video Section -->
-  <div class="video-wrapper">
-    <div class="video-container">
-      <video autoplay muted loop>
-        <source src="images/welcome_video.mp4" type="video/mp4">
-        Your browser does not support the video tag. 
-      </video>
-      <div class="overlay-text">
-        <h1>Welcome To CTU Buddy</h1>
-        <p>Your educational companion at City Technical University</p>
-        <div class="button-container">
-          <a href="#" class="btn btn">Explore Timetable</a>
-          <a href="#" class="btn btn">Join Discussion</a>
-          <a href="#" class="btn btn">Access Resources</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<!-- Announcement Section -->
-<div class="announcement-section container">
-  <h2>Announcements</h2>
-  
-  <!-- Announcements -->
-  <div class="announcement">
-    <h3>CTU Tech Fest 2024</h3>
-    <p>Get ready for CTU Tech Fest 2024, the premier event of the year for all tech enthusiasts at City Technical University! Join us in September for an action-packed week of innovation, creativity, and learning. This year's fest features hands-on workshops, insightful talks from industry leaders, and exciting competitions that will challenge your skills and ignite your passion for technology. Whether you're a coding wizard, a design guru, or simply curious about the future of tech, there's something for everyone. Don't miss out on this opportunity to connect, collaborate, and celebrate the best in technology at CTU!</p>
-    <span class="date">Posted on: August 20, 2024</span>
-  </div>
-
-  <div class="announcement">
-    <h3>Welcome to the New Semester!</h3>
-    <p>We are excited to kick off the new semester with new features on CTU-Buddy. Check out the updated timetable and join our community discussions.</p>
-    <span class="date">Posted on: August 18, 2024</span>
-  </div>
-
-  <div class="announcement">
-    <h3>Library Hours Extended</h3>
-    <p>Good news! The CTU Library has extended its hours to better accommodate your study schedule. The new hours are from 8:00 AM to 10:00 PM.</p>
-    <span class="date">Posted on: August 15, 2024</span>
-  </div>
-</div>
-
-<!-- Buttons Bar Section -->
-<div class="button-bar">
-  <div class="container">
-    <a href="#" class="btn btn">Timetable</a>
-    <a href="#" class="btn btn">Discussion</a>
-    <a href="#" class="btn btn">Resources</a>
-  </div>
-</div>
-
-<!-- Timetable Iframe Section -->
-<div class="timetable-section container">
-  <iframe src="timetable.html" title="Timetable" frameborder="0" class="timetable-iframe"></iframe>  <!-- Enter Page Name -->
-</div>
-
-<!-- Student Life Section -->
-<div class="student-life-section container">
-  <h2>Student Life at CTU</h2>
-
-  <div class="slideshow-container">
-    <img src="images/student_life_1.jpg" alt="Student Life 1" class="slideshow-image">
-    <img src="images/student_life_2.jpg" alt="Student Life 2" class="slideshow-image">
-    <img src="images/student_life_3.jpg" alt="Student Life 3" class="slideshow-image">
-    <img src="images/student_life_4.jpg" alt="Student Life 4" class="slideshow-image">
-    <img src="images/student_life_5.jpg" alt="Student Life 5" class="slideshow-image">
-    <img src="images/student_life_6.jpg" alt="Student Life 6" class="slideshow-image">
-    <img src="images/student_life_7.jpg" alt="Student Life 7" class="slideshow-image">
-    <img src="images/student_life_8.jpg" alt="Student Life 8" class="slideshow-image">
-    <img src="images/student_life_9.jpg" alt="Student Life 9" class="slideshow-image">
-    <img src="images/student_life_10.jpg" alt="Student Life 10" class="slideshow-image">
-  </div>
-</div>
-
-<!-- Footer Section -->
-<footer class="footer">
-  <div class="container footer-content">
-    <div class="footer-logo">
-      <img src="images/logo_color.png" alt="CTU-Buddy Logo">
-    </div>
-    <div class="footer-columns">
-      <div class="footer-column">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="#">Timetable</a></li>  <!-- Enter Page Name -->
-          <li><a href="#">Discussion</a></li>  <!-- Enter Page Name -->
-          <li><a href="#">Share Resources</a></li>  <!-- Enter Page Name -->
-          <li><a href="#">About Us</a></li>  <!-- Enter Page Name -->
-          <li><a href="#">Contact Us</a></li>  <!-- Enter Page Name -->
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Follow Us</h3>
-        <ul class="social-icons">
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>  <!-- Enter FB Link -->
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>  <!-- Enter IG Link -->
-          <li><a href="#"><i class="fab fa-tiktok"></i></a></li>  <!-- Enter TT Link -->
-          <li><a href="#"><i class="fab fa-youtube"></i></a></li>  <!-- Enter YT Link -->
-          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>  <!-- Enter LI Link -->
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
-
-
+    </footer>
+    <script src="js/header.js"></script>
   </body>
 </html>

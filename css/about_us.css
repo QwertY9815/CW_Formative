@@ -1,7 +1,25 @@
 body {
     background-color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
+h2 {
+    color: #26282B;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px;
+}
 
 .header {
     padding: 10px;
@@ -9,7 +27,7 @@ body {
     background: #26282B;
     color: rgb(255, 255, 255);
     font-size: 30px;
-    margin: 0px 40px 0px 40px;
+    margin: 10px 40px 0px 40px;
     font-family: 'Sora', sans-serif;
     border-radius: 8px;
     /* background: linear-gradient(135deg, #353941, #565f75); */
@@ -89,7 +107,7 @@ body {
     flex: 1;
     padding: 20px;
     background-color: #353941;
-    margin: 40px 40px 0px 40px;
+    margin: 40px 40px 10px 40px;
     border: #26282B solid 1px;
     border-radius: 8px;
 }
@@ -107,10 +125,51 @@ body {
 
 .mission p, .vision p, .purpose p {
     text-align: justify;
+    padding: 0px 20px 0px 20px;
     color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     line-height: 1.6;
+}
+
+
+
+
+/* @keyframes fadeIn {   //Animation vir load van page
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header, .mission, .vision, .purpose, .team, .team_heading {
+    animation: fadeIn 1.5s ease-in-out;
+} */
+
+
+@media screen and (max-width: 992px) {
+    .mission {
+        margin: 10px 5px;
+    }
+
+    .vision {
+        margin: 10px 5px;
+    }
+
+    .purpose {
+        margin: 10px 5px;
+    }
+
+    .header {
+        margin-top: 10px;
+    }
+
+    .mission p, .vision p, .purpose p {
+        text-align: left;
+    }
+
+    .member:hover {
+        transform: none;
+        transition: transform 0.3s;
+    }
 }
 
 @media (max-width: 768px) {
@@ -123,42 +182,7 @@ body {
     }
 }
 
-.footer {
-    padding: 10px;
-    margin: 25px 40px 0px 40px;
-    text-align: center;
-    background: #26282B;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-    font-family: 'Sora', sans-serif;
-    border-radius: 8px;
-}
 
-/* @keyframes fadeIn {   //Animation vir load van page
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.header, .mission, .vision, .purpose, .team, .team_heading {
-    animation: fadeIn 1.5s ease-in-out;
-} */
-
-h2 {
-    color: #26282B;
-    font-size: 35px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-p {
-    font-size: 18px;
-    margin: 10px;
-}
 
 /* #353941
 #26282B
