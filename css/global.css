@@ -11,8 +11,8 @@ body, html {
 .wrapper {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ensure the wrapper takes at least the full height of the viewport */
-}
+    flex: 1;
+  }
 
 main {
     flex: 1; /* Allow the main content to grow and fill available space */
