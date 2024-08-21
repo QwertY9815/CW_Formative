@@ -12,6 +12,7 @@ footer {
   text-align: center;
   padding: 20px;
   font-family: "Sora", sans-serif; /* Use Sora font for the footer */
+  bottom:0
 }
 
 .footer-content p {
