@@ -1,6 +1,6 @@
 /* Add a background to the form section */
 .contact-us {
-    background-image: url('../assets/images/Contact_BG.jpg');
+    background-image: url('/assets/images/Contact_BG.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
