@@ -24,6 +24,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
   </head>
   <body>
     <!-- Navbar comes here -->
@@ -55,55 +57,10 @@
         </div>
       </div>
     </div>
-    <div class="discussions">
-      <div class="question">
-        <div>
-          <i class="bi bi-chat-left"></i>
-          <h2>Type discussions</h2>
-          <p>Wara wara this and that description</p>
-        </div>
-        <div><i class="bi bi-chat-right-text"></i> 23403</div>
+    <div class="discussions" id="discussions">
+
       </div>
-      <div class="question">
-        <div>
-          <i class="bi bi-chat-left"></i>
-          <h2>Type discussions</h2>
-          <p>Wara wara this and that description</p>
-        </div>
-        <div><i class="bi bi-chat-right-text"></i> 23403</div>
-      </div>
-      <div class="question">
-        <div>
-          <i class="bi bi-chat-left"></i>
-          <h2>Type discussions</h2>
-          <p>Wara wara this and that description</p>
-        </div>
-        <div><i class="bi bi-chat-right-text"></i> 23403</div>
-      </div>
-      <div class="question">
-        <div>
-          <i class="bi bi-chat-left"></i>
-          <h2>Type discussions</h2>
-          <p>Wara wara this and that description</p>
-        </div>
-        <div><i class="bi bi-chat-right-text"></i> 23403</div>
-      </div>
-      <div class="question">
-        <div>
-          <i class="bi bi-chat-left"></i>
-          <h2>Type discussions</h2>
-          <p>Wara wara this and that description</p>
-        </div>
-        <div><i class="bi bi-chat-right-text"></i> 23403</div>
-      </div>
-      <div class="question">
-        <div>
-          <i class="bi bi-chat-left"></i>
-          <h2>Type discussions</h2>
-          <p>Wara wara this and that description</p>
-        </div>
-        <div><i class="bi bi-chat-right-text"></i> 23403</div>
-      </div>
+      
     </div>
 
     <footer class="footer">
@@ -124,6 +81,27 @@
               <li><a href="../pages/contact_us.html">Contact Us</a></li>
             </ul>
           </div>
+
+
+          <form id="discussionForm" class="discussionForm hidden">
+            <h6 id="closeDiscussionForm">X</h6>
+            <h1>Post a new question</h1>
+            <select type="text" name="type" id="type" placeholder="Type">
+              <option value="General">General</option>
+              <option value="Campus">Campus</option>
+              <option value="Finance">Finance</option>
+              <option value="Student">Student</option>
+              <option value="Curriculum">Curriculum</option>
+            </select>
+            <textarea type="text" name="question" id="question" placeholder="Question"></textarea>
+            <button id="">Submit</button>
+          </form>
+
+          <button id="openForm">Make a new discussion</button>
+
+
+
+
           <div class="footer-column">
             <h3>Follow Us</h3>
             <ul class="social-icons">
@@ -147,6 +125,9 @@
         </div>
       </div>
     </footer>
-    <script src="../js/header.js"></script>
+    <script src="../js/header.js" ></script>
+    <script src="../js/discussions.js">
+
+    </script>
   </body>
 </html>

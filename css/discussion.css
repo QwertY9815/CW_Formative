@@ -59,11 +59,16 @@ body{
     margin: 5px;
     padding: 20px;
     height: 200px;
+    width: 300px;
 }
 .question:hover{
     cursor: pointer;
     border-color: #353941;
     transition: .3s;
+}
+
+.question h2{
+    width: 20px;
 }
 .bi-chat-left{
     font-size: 40px;
@@ -73,3 +78,100 @@ body{
     font-size: 20px;
 }
 
+.discussionForm{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px #5F85DB ;
+    color: #26282B;
+}
+
+.discussionForm h6{
+    font-size: 16px;
+    color: #5F85DB;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 50px;
+}
+
+h6:hover{
+    cursor: pointer;
+}
+select{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 500px;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+}
+button{
+    padding: 5px 0;
+    background-color: #5F85DB;
+    border-radius: 20px;
+    border: solid 1px #5F85DB;
+    color: #ffffff; 
+    margin: 10px 0;
+}
+button:hover{
+    cursor: pointer;
+}
+
+#openForm{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.postReply{
+    input{
+        border: 2px solid #5F85DB;
+        border-radius: 5px;
+    }
+
+    button{
+        padding: 2px 10px;
+    }
+}
+
+.replies{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: solid 1px #5F85DB ;
+    color: #26282B;
+    width: 300px;
+}
+.reply{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    textarea{
+        width: 250px;
+    }
+}
