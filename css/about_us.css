@@ -21,6 +21,11 @@ p {
     margin: 10px;
 }
 
+.roles {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 .header {
     padding: 10px;
     text-align: center;
