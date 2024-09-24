@@ -1,0 +1,104 @@
+/* Header Styles */
+header {
+  background-color: #353941;
+  color: #90b8f8;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Sora", sans-serif; /* Use Sora font for the header */
+}
+
+.logo {
+  flex: 1; /* Allow the logo to take up available space */
+}
+
+.logo img {
+  height: 100px;
+}
+
+nav {
+  flex: 5; /* Allow the navigation to take up more space */
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center; /* Center the navigation links */
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #90b8f8;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  font-family: "Sora", sans-serif; /* Use Sora font for the navigation links */
+  font-weight: 700; /* Bold font for emphasis */
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  background-color: #26282b;
+  border-radius: 5px;
+}
+
+span {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .hide {
+    display: none;
+    transform: 10s;
+  }
+  span {
+    display: block;
+    color: #ffffff;
+  }
+  span:hover {
+    cursor: pointer;
+  }
+  nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #353941;
+    padding: 20px;
+    border-radius: 10px;
+    animation: example 0.5s;
+    z-index: 999;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+  }
+  #close-nav {
+    color: white;
+    text-align: right;
+    width: 100%;
+    line-height: 0px;
+  }
+  #close-nav:hover {
+    cursor: pointer;
+  }
+  .bi-box-arrow-right {
+    font-size: 20px;
+  }
+  .bi-list {
+    font-size: 32px;
+  }
+  @keyframes example {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100;
+    }
+  }
+}

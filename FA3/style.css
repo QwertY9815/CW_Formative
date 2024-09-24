@@ -1,0 +1,378 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Color Variables */
+:root {
+  --dark-blue: #5f85db;
+  --light-blue: #90b8f8;
+  --dark-grey: #353941;
+  --light-grey: #26282b;
+  --off-white: #f9f8f4;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Buttons */
+
+.btn-login {
+  display: inline-block;
+  padding: 5px 5px;
+  background: var(--off-white);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-dark-blue {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--dark-blue);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.button-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: #fff;
+  background-color: var(--dark-blue);
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #90b8f8;
+  transition: background-color 0.6s ease;
+  color: #333;
+}
+
+/* Video */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.overlay-text h1 {
+  font-family: "Sora", sans-serif;
+  font-size: 4em;
+  margin: 0;
+}
+
+.overlay-text p {
+  font-family: "Montserrat", "Helvetica Neue";
+  font-size: 1.5em;
+}
+
+/* Announcement Section */
+.announcement-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-section h2 {
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+  font-size: 2em;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+}
+
+.announcement {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.announcement h3 {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-family: "Sora", sans-serif;
+}
+
+.announcement p {
+  margin-bottom: 10px;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.announcement .date {
+  font-size: 0.9em;
+  color: #777;
+  font-style: italic;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Button Bar Section */
+.button-bar {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: var(--off-white);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button-bar .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-bar .btn {
+  padding: 12px 24px;
+  color: #fff;
+  background-color: var(--dark-blue);
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  width: 32%;
+}
+
+.button-bar .btn:hover {
+  background-color: #90b8f8;
+  color: #333;
+}
+
+/* Student Life Section */
+.student-life-section {
+  margin-top: 40px;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.student-life-section h2 {
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+  font-size: 2em;
+  font-family: "Sora", sans-serif;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+}
+
+.slideshow-image {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.slideshow-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.slideshow-container::-webkit-scrollbar-thumb {
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+}
+
+.slideshow-container::-webkit-scrollbar-track {
+  background-color: var(--light-grey);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  /* Video Section */
+  .overlay-text h1 {
+    font-size: 2.3em;
+    line-height: 45px;
+  }
+  .video-container {
+    height: 80vh;
+  }
+  .overlay-text p {
+    font-size: 0.9em;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    z-index: 1;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    color: #fff;
+    background-color: var(--dark-blue);
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 5px;
+  }
+
+  /* Announcement Section */
+  .announcement-section {
+    padding: 15px;
+  }
+
+  .announcement h3 {
+    font-size: 1.2em;
+  }
+
+  .announcement p {
+    font-size: 0.9em;
+  }
+
+  .announcement .date {
+    font-size: 0.8em;
+  }
+
+  /* Button Bar Section */
+  .button-bar .container {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 10px;
+  }
+
+  .button-bar .btn {
+    width: 100%;
+  }
+
+  /* Student Life Section */
+  .student-life-section h2 {
+    font-size: 1.5em;
+  }
+
+  .slideshow-container {
+    gap: 10px;
+    padding: 5px;
+  }
+
+  .slideshow-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .slideshow-image:hover {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Footer Section */
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+header {
+  background-color: #fff;
+  color: #333;
+}
+
+.nav-links a {
+  color: #333;
+}
+span{
+  color: #333;
+}
+
+.nav-links a:hover {
+  background-color: #fff;
+  color: var(--dark-blue);
+  transition: 0.4s ease;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-links a {
+    color: #fff;
+  }
+}
