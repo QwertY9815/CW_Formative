@@ -61,6 +61,7 @@ function loadPosts() {
                                         </div>
                                         <div><i class="bi bi-chat-right-text"></i> ${post.replies.length}</div>
                                         <div class="replies hidden" id="replies">
+                                        <p class="closeReply">X<p>
                                         <p>Q: ${post.question} #${post.id}</p>
                                         <h2>Replies:  </h2>
                                         ${post.replies.map((reply)=>{
@@ -102,6 +103,14 @@ function loadPosts() {
     })
 
   })
+
+  const closeReply = Array.from(document.getElementsByClassName("closeReply"))
+  closeReply.forEach((reply)=>{
+    reply.addEventListener("click",(el)=>{
+      location.reload()
+    })
+  })
+  
 
 }, 1000);
 

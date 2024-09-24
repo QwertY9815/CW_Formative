@@ -170,6 +170,13 @@ button:hover{
     display: none;
 }
 
+.closeReply{
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    color: #5F85DB;
+}
+
 @media screen and (max-width: 992px) {
     textarea{
         width: 250px;
