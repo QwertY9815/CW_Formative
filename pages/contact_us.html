@@ -53,7 +53,10 @@
       </header>
 
       <!-- Main content -->
-      <main class="contact-us" style="background-image: url('../images/Contact_BG.jpg');">
+      <main
+        class="contact-us"
+        style="background-image: url('../images/Contact_BG.jpg')"
+      >
         <section class="form-container">
           <!-- Left text section -->
           <div class="contact-info">
@@ -141,11 +144,21 @@
             <div class="footer-column">
               <h3>Follow Us</h3>
               <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-tiktok"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -153,46 +166,52 @@
       </footer>
     </div>
 
+    <div class="footer-bottom">
+      <li>insertGroupname</li>
+      <li>&copy</li>
+      <li>2024</li>
+    </div>
+
     <script>
       document
-        .getElementById('contactForm')
-        .addEventListener('submit', function (event) {
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
           if (!validateForm()) {
             event.preventDefault();
           }
         });
 
       function validateForm() {
-        const name = document.getElementById('name').value;
+        const name = document.getElementById("name").value;
         if (name.length < 2 || name.length > 50) {
-          alert('Name must be between 2 and 50 characters long.');
+          alert("Name must be between 2 and 50 characters long.");
           return false;
         }
 
-        const studentNumber = document.getElementById('studentNumber').value;
+        const studentNumber = document.getElementById("studentNumber").value;
         if (studentNumber.length < 6 || studentNumber.length > 10) {
-          alert('Student number must be between 6 and 10 characters long.');
+          alert("Student number must be between 6 and 10 characters long.");
           return false;
         }
 
-        const email = document.getElementById('email').value;
-        const emailPattern =
-          /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        const email = document.getElementById("email").value;
+        const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailPattern.test(email)) {
-          alert('Please enter a valid email address.');
+          alert("Please enter a valid email address.");
           return false;
         }
 
-        const message = document.getElementById('message').value;
+        const message = document.getElementById("message").value;
         if (message.length < 10) {
-          alert('Message must be at least 10 characters long.');
+          alert("Message must be at least 10 characters long.");
           return false;
         }
 
-        const phone = document.getElementById('phone').value;
-        const phonePattern = /^[+]*[0-9]{1,4}[.\s-]*\(?[0-9]+\)?[.\s-]*[0-9]+[.\s-]*[0-9]+[.\s-]*[0-9]+$/;
+        const phone = document.getElementById("phone").value;
+        const phonePattern =
+          /^[+]*[0-9]{1,4}[.\s-]*\(?[0-9]+\)?[.\s-]*[0-9]+[.\s-]*[0-9]+[.\s-]*[0-9]+$/;
         if (!phonePattern.test(phone)) {
-          alert('Please enter a valid phone number.');
+          alert("Please enter a valid phone number.");
           return false;
         }
 

@@ -32,7 +32,7 @@ footer {
 
 .footer {
   background-color: var(--dark-grey);
-  padding: 40px 0;
+  padding: 20px 0;
   color: white;
 }
 
@@ -97,4 +97,16 @@ footer {
 
 .footer-info p {
   margin: 0;
+}
+
+.footer-bottom {
+  font-family: "Sora", sans-serif;
+  background-color: var(--dark-grey);
+  padding: 10px;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 10px;
 }

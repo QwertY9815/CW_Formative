@@ -100,7 +100,9 @@
               <ul>
                 <li><a href="../pages/timetable.html">Timetable</a></li>
                 <li><a href="../pages/discussion.html">Discussion</a></li>
-                <li><a href="../pages/share_resources.html">Share Resources</a></li>
+                <li>
+                  <a href="../pages/share_resources.html">Share Resources</a>
+                </li>
                 <li><a href="../pages/about_us.html">About Us</a></li>
                 <li><a href="../pages/contact_us.html">Contact Us</a></li>
               </ul>
@@ -129,13 +131,24 @@
         </div>
       </footer>
     </div>
+
+    <div class="footer-bottom">
+      <li>insertGroupname</li>
+      <li>&copy</li>
+      <li>2024</li>
+    </div>
+
     <script src="../js/header.js"></script>
     <script>
       // JavaScript to update the label with the selected file's name
-      document.getElementById('resource').addEventListener('change', function() {
-        const fileName = this.files[0].name;
-        document.getElementById('file-chosen').textContent = fileName ? fileName : 'Choose File';
-      });
+      document
+        .getElementById("resource")
+        .addEventListener("change", function () {
+          const fileName = this.files[0].name;
+          document.getElementById("file-chosen").textContent = fileName
+            ? fileName
+            : "Choose File";
+        });
     </script>
   </body>
 </html>
