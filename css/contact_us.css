@@ -4,16 +4,16 @@
     background-position: center;
     padding: 100px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
-    gap: 20px; /* This controls the gap between forms and map */
+    gap: 30px; /* This controls the gap between forms and map */
 }
 
 /* Left column for the Get In Touch form */
 .form-column {
     display: flex;
     flex-direction: column;
-    width: 50%; /* Take up half the space */
+    width: 100%; /* Take up half the space */
 }
 
 /* Form container for Get In Touch */
@@ -21,7 +21,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     padding: 40px;
     border-radius: 12px;
-    width: 100%; /* Full width within the form column */
+    width:500px; /* Full width within the form column */
     margin-bottom: 20px;
 }
 
@@ -97,7 +97,7 @@ form button:hover {
 
 /* Map section */
 .map-container {
-    width: 850px;
+    width: auto;
     height: 500px;
     background-color: #f5f5f5;
     border-radius: 12px;
@@ -111,7 +111,7 @@ form button:hover {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 12px;
-    width: 850px; /* Full width matching the map */
+    width: 500px; /* Full width matching the map */
     margin-top: 20px;
 }
 
