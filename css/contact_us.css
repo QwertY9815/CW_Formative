@@ -4,25 +4,30 @@
     background-position: center;
     padding: 100px 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* This controls the gap between forms and map */
 }
 
-
-.form-container {
+/* Left column for the Get In Touch form */
+.form-column {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 50%; /* Take up half the space */
+}
+
+/* Form container for Get In Touch */
+.form-container {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 40px;
     border-radius: 12px;
-    max-width: 900px;
-    width: 100%;
+    width: 100%; /* Full width within the form column */
+    margin-bottom: 20px;
 }
 
-
+/* Contact Information styling */
 .contact-info {
-    flex: 1;
-    margin-right: 40px;
+    margin-bottom: 20px;
 }
 
 .contact-info h1 {
@@ -38,14 +43,8 @@
     margin-bottom: 20px;
 }
 
-
-.contact-info p:last-of-type {
-    margin-bottom: 80px;
-}
-
-/* Right Section - Form */
+/* Contact form */
 form {
-    flex: 1;
     display: flex;
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
@@ -65,16 +64,15 @@ form textarea {
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 100%;
+    max-width: 800px; /* Set a max-width for input fields */
     font-family: 'Montserrat', sans-serif;
 }
-
 
 form input::placeholder,
 form textarea::placeholder {
     font-family: 'Montserrat', sans-serif;
-    color: #888; 
+    color: #888;
 }
-
 
 form button {
     background-color: #5f85db;
@@ -83,26 +81,83 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 form button:hover {
     background-color: #003399;
 }
 
+/* Right column for the map and subscription form */
+.map-column {
+    display: flex;
+    flex-direction: column;
+    width: 50%; /* Take up the remaining half of the space */
+}
 
-@media (max-width: 768px) {
-    .form-container {
+/* Map section */
+.map-container {
+    width: 850px;
+    height: 500px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+/* Subscription form */
+.subscription-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    width: 850px; /* Full width matching the map */
+    margin-top: 20px;
+}
+
+.subscription-form h2 {
+    font-family: 'Sora', sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.subscription-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.subscription-form button {
+    background-color: #5f85db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.subscription-form button:hover {
+    background-color: #003399;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .contact-us {
         flex-direction: column;
         align-items: center;
-        padding: 20px;
     }
 
-    .contact-info {
-        margin-right: 0;
-        margin-bottom: 20px;
+    .form-column,
+    .map-column {
+        width: 100%; /* Full width on smaller screens */
     }
 
-    form {
+    .form-container,
+    .map-container,
+    .subscription-form {
         width: 100%;
     }
 }

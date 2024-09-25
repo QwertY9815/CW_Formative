@@ -65,7 +65,7 @@
         <section class="resources">
           <h1>Share Educational Resources</h1>
           <div class="form-container">
-            <form action="#">
+            <form id="upload-form" enctype="multipart/form-data">
               <!-- Instructional Text -->
               <p>Please select a PDF file to upload.</p>
 
@@ -84,6 +84,11 @@
               <!-- Submit Button -->
               <button type="submit" class="btn">Upload</button>
             </form>
+
+            <!-- Upload status message -->
+            <div id="upload-status" class="upload-message"></div>
+            <!-- View PDF link (Initially hidden) -->
+            <div id="view-pdf"></div>
           </div>
         </section>
       </main>
@@ -134,21 +139,70 @@
 
     <div class="footer-bottom">
       <li>insertGroupname</li>
-      <li>&copy</li>
-      <li>2024</li>
+      <li>&copy; 2024</li>
     </div>
 
     <script src="../js/header.js"></script>
     <script>
-      // JavaScript to update the label with the selected file's name
-      document
-        .getElementById("resource")
-        .addEventListener("change", function () {
-          const fileName = this.files[0].name;
-          document.getElementById("file-chosen").textContent = fileName
-            ? fileName
-            : "Choose File";
-        });
+      // Update label with the selected file's name
+      document.getElementById("resource").addEventListener("change", function () {
+        const fileName = this.files[0].name;
+        document.getElementById("file-chosen").textContent = fileName
+          ? fileName
+          : "Choose File";
+      });
+
+      // Handle form submission and file upload
+      document.getElementById('upload-form').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+        const uploadStatus = document.getElementById('upload-status');
+        const viewPDF = document.getElementById('view-pdf');
+        uploadStatus.innerHTML = 'Uploading...';
+        uploadStatus.className = ''; // Clear status class
+        viewPDF.style.display = 'none'; // Hide View PDF link during upload
+
+        try {
+          const response = await fetch('http://localhost:3000/upload', {
+            method: 'POST',
+            body: formData,
+          });
+
+          if (response.ok) {
+            const data = await response.json();
+            // Show success message in green
+            uploadStatus.className = 'success';
+            uploadStatus.innerHTML = 'File uploaded successfully!';
+
+            // Create links for viewing and downloading the PDF
+            viewPDF.innerHTML = `
+              <a href="${data.downloadURL}" target="_blank">View PDF in New Tab</a><br>
+              <a href="${data.downloadURL}" id="download-link">Download PDF</a>
+            `;
+            viewPDF.style.display = 'block'; // Make the links visible
+
+            // Add event listener to download link to trigger download only without opening in the same window
+            const downloadLink = document.getElementById('download-link');
+            downloadLink.addEventListener('click', (e) => {
+              e.preventDefault();
+              const link = document.createElement('a');
+              link.href = data.downloadURL;
+              link.setAttribute('download', ''); // Triggers the download
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link); // Clean up the temporary link
+            });
+          } else {
+            uploadStatus.className = 'error'; // Show error message in red
+            uploadStatus.innerHTML = 'Failed to upload file. Please try again.';
+          }
+        } catch (error) {
+          console.error('Error uploading file:', error);
+          uploadStatus.className = 'error'; // Show error message in red
+          uploadStatus.innerHTML = 'Error uploading file. Please try again.';
+        }
+      });
     </script>
   </body>
 </html>

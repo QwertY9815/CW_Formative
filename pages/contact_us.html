@@ -23,7 +23,6 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -53,75 +52,55 @@
       </header>
 
       <!-- Main content -->
-      <main
-        class="contact-us"
-        style="background-image: url('../images/Contact_BG.jpg')"
-      >
-        <section class="form-container">
-          <!-- Left text section -->
-          <div class="contact-info">
-            <h1>Get In Touch</h1>
-            <p>
-              We'd love to hear from you! Whether it's a question, comment, or
-              suggestion, feel free to reach out.
-            </p>
-            <p>Email us directly or fill out the form to get in contact!</p>
-            <div class="contact-details">
-              <p>Email: knowdaway@ctucareer.co.za</p>
-              <p>Phone: +27 72 698 42012</p>
-              <p>Address: Someplace New, That City, The World, 0001</p>
+      <main class="contact-us" style="background-image: url('../images/Contact_BG.jpg')">
+        <div class="left-column">
+          <!-- Get In Touch form -->
+          <section class="form-container">
+            <div class="contact-info">
+              <h1>Get In Touch</h1>
+              <p>We'd love to hear from you! Whether it's a question, comment, or suggestion, feel free to reach out.</p>
+              <p>Email us directly or fill out the form to get in contact!</p>
+              <div class="contact-details">
+                <p>Email: knowdaway@ctucareer.co.za</p>
+                <p>Phone: +27 72 698 42012</p>
+                <p>Address: Someplace New, That City, The World, 0001</p>
+              </div>
             </div>
-          </div>
+            <form action="#" id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+              <label for="studentNumber">Student Number:</label>
+              <input type="text" id="studentNumber" name="studentNumber" placeholder="Enter your student number" required />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+              <label for="phone">Contact Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your contact number" required />
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Type your message here" required></textarea>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </section>
+        </div>
 
-          <!-- Form section -->
-          <form action="#" id="contactForm">
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Enter your full name"
-              required
-            />
+        <!-- Map section aligned to the right -->
+        <div class="right-column">
+          <section class="map-container">
+            <h2>Our Campus Location</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.205342417865!2d28.27778821533426!3d-25.78298391051269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9560bebcdcc3f5%3A0xd96e31d25d235cbc!2sCTU%20Training%20Solutions%20Menlyn%20Pretoria!5e0!3m2!1sen!2sza!4v1695647398991!5m2!1sen!2sza"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </section>
 
-            <label for="studentNumber">Student Number:</label>
-            <input
-              type="text"
-              id="studentNumber"
-              name="studentNumber"
-              placeholder="Enter your student number"
-              required
-            />
-
-            <label for="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your email address"
-              required
-            />
-
-            <label for="phone">Contact Number:</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              placeholder="Enter your contact number"
-              required
-            />
-
-            <label for="message">Message:</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Type your message here"
-              required
-            ></textarea>
-
-            <button type="submit" class="btn">Send Message</button>
-          </form>
-        </section>
+          <!-- Subscription Form BELOW the map -->
+          <section class="subscription-form">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Enter your email below to receive updates and newsletters:</p>
+            <form action="#" id="subscriptionForm">
+              <input type="email" id="subscriberEmail" name="subscriberEmail" placeholder="Enter your email address" required />
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </section>
+        </div>
       </main>
 
       <!-- Footer -->
@@ -144,21 +123,11 @@
             <div class="footer-column">
               <h3>Follow Us</h3>
               <ul class="social-icons">
-                <li>
-                  <a href="#"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-tiktok"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
               </ul>
             </div>
           </div>
@@ -168,18 +137,16 @@
 
     <div class="footer-bottom">
       <li>insertGroupname</li>
-      <li>&copy</li>
-      <li>2024</li>
+      <li>&copy; 2024</li>
     </div>
 
     <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          if (!validateForm()) {
-            event.preventDefault();
-          }
-        });
+      // Contact form validation
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
+        if (!validateForm()) {
+          event.preventDefault();
+        }
+      });
 
       function validateForm() {
         const name = document.getElementById("name").value;
@@ -217,6 +184,13 @@
 
         return true;
       }
+
+      // Subscription form handler
+      document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('subscriberEmail').value;
+        alert(`You have subscribed with ${email}`);
+      });
     </script>
 
     <script src="../js/header.js"></script>
