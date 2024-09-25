@@ -64,7 +64,7 @@ form textarea {
     border: 1px solid #ddd;
     border-radius: 5px;
     width: 100%;
-    max-width: 800px; /* Set a max-width for input fields */
+    max-width: 470px; /* Set a max-width for input fields */
     font-family: 'Montserrat', sans-serif;
 }
 
